@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #container{
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            position: relative;
+            height: 500px;
+            padding: 10px;
+            background-color: purple;
+        }
+
+        #conteudo{
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+
+            left: 50%;
+            top: 50%;
+
+            transform:translate(-50%, -50%) ;
+
+
+        }
+
+
+        .div1 {
+            position: relative;
+            margin: 40px 0;
+            padding: 20px;
+            background-color: gray;
+            height: 400px;
+
+
+        }
+
+        .div2{
+            position: absolute;
+            background-color: black;
+            height: 300px;
+            width: 400px;
+
+            left: 50%;
+            top: 50%;
+            border-radius: 10px;
+
+            transform: translate(-50%, -50%);
+
+
+        }
+    </style>
+</head>
+<body>
+
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+
+
+
+
+    <div class="div1">
+        <div class="div2">  
+            <h1 style="color: white; text-align: center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Centralizei essa caixa</h1>
+        </div>
+    </div>
+    
+</body>
+</html>
